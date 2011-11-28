@@ -1,0 +1,232 @@
+﻿<% content_for :css_head do %>
+  <%= stylesheet_link_tag "deal" %>
+<% end %>
+<% content_for :js_head do %>
+  <%= javascript_include_tag "deal" %>
+<% end %>
+<% content_for :js_ready do %>
+    deal_create_init();
+<% end %>
+
+<div class="alert-message success fade in hide" data-alert="alert">
+    <a class="close" href="#">×</a>
+    <p><strong>恭喜!</strong> 新增店家成功.</p>
+</div>
+<div class="alert-message error fade in hide" data-alert="alert">
+    <a class="close" href="#">×</a>
+    <p><strong>輸入錯誤!</strong> 店家名稱不可空白.</p>
+</div>
+
+<div class="row shop_info">
+	<form id="formShopInfo">
+
+        <div class="online_order" style="margin:10px;padding: 10px;background-color: #EAEAEA;">
+           <h3>訂單內容</h3>
+            <p>購買滿10包以上免運費，若未滿10包請付運費100元。(限寄送本島）
+               付款方式：電匯或現金存入 。
+               匯款帳戶 : 台北富邦/西湖分行 668168132892 戶名:李金璋
+               目前本站尚無貨到付款服務，因此每次交易請先匯款，如有不便敬請原諒。
+               請撥打0952-121-831 訂購，並告知匯款帳號後五碼。</p>
+
+            <table class="bordered-table zebra-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th colspan="3">原味</th>
+                  <th colspan="3">蔓越莓</th>
+                  <th colspan="3">綜合</th>
+                  <th colspan="3">抹茶</th>
+                  <th colspan="3">巧克力</th>
+                  <th>總計</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>小包</td><td>中包</td><td>大包</td>
+                  <td>小包</td><td>中包</td><td>大包</td>
+                  <td>小包</td><td>中包</td><td>大包</td>
+                  <td>小包</td><td>中包</td><td>大包</td>
+                  <td>小包</td><td>中包</td><td>大包</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td><td></td><td></td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <div class="clearfix single_field">
+                <label for="brief">備註</label>
+                    <div class="input">
+                        <textarea class="xxlarge" name="brief" rows="2"></textarea>
+                        <span class="help-block">
+                          以上項目沒完備的部份,請在這裡說明.
+                        </span>
+                    </div>
+            </div>
+        </div>
+
+        <!--<div class="online_order" style="margin:10px;padding: 10px;background-color: #EAEAEA;">
+            <h3>聯絡資訊</h3>
+            <div class="clearfix single_field required">
+                <label for="name">姓名</label>
+                    <div class="input">
+                        <input class="xlarge" name="name" size="30" type="text">
+                        <span class="help-inline">因郵寄關係,還請填入真正的姓名</span>
+                    </div>
+            </div>
+            
+            <div class="clearfix single_field required">
+                <label for="brand">E-mail</label>
+                    <div class="input">
+                        <input class="xlarge" name="brand" size="10" type="text">
+                        <span class="help-inline">讓我們方便e-mail給你最新的處理進度喔^^</span>
+                    </div>
+            </div>
+            
+            <div class="clearfix single_field required">
+                <label for="type">匯款帳號後五碼</label>
+                    <div class="input">
+                        <input class="xlarge" name="type" size="30" type="text">
+                        <span class="help-inline">先留下後五碼，我們查帳會更迅速</span>
+                    </div>
+            </div>
+            
+            <div class="clearfix single_field required">
+                <label for="tel">收貨地址</label>
+                    <div class="input">
+                        <input class="xlarge" name="tel" size="30" type="text">
+                        <span class="help-inline">請記得加郵遞區號3碼,方便我們郵寄喔 ^^</span>
+                    </div>
+            </div>
+            
+            <div class="clearfix single_field">
+                <label for="address">收貨人電話</label>
+                    <div class="input">
+                        <input class="xlarge" name="address" size="30" type="text">
+                        <span class="help-inline">方便我們在郵寄連絡人處附上您的電話</span>
+                    </div>
+            </div>
+        </div>
+
+		<div class="actions">
+            <button type="submit" class="btn primary">Save changes</button>&nbsp;<button type="reset" class="btn">Cancel</button>
+		</div>-->
+	</form>
+</div>

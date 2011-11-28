@@ -1,0 +1,552 @@
+﻿.myTitle_img {
+    width:330px;
+    height:230px;
+}        
+
+.myProduct_img {
+    width:290px;
+    height:230px;
+}        
+
+/* basic ################################################################### */
+div.topbar_font {
+    font-size: 18px;
+}
+
+.logo_box {
+    margin-top: 3px;
+}
+  
+div.container_box {
+    padding-top: 60px;
+}
+
+.container_box .span16 {
+    padding-top: 20px;
+    margin-left:0px;
+}
+
+/* deal ################################################################### */
+.single_deal {
+    padding: 22px 0 0 0;
+    border-bottom-style: double;
+    border-bottom-color: #BBB;
+    margin-left:10px;
+    margin-top:65px;
+    margin-right:10px;
+}		
+
+.single_deal .span3 {
+    margin-left:0px;
+}
+
+.single_deal .shop_img {
+    width:160px;
+    height:120px;
+}
+
+.single_deal .deal_shop {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: none;
+    margin-bottom:0px;
+}		
+
+.single_deal .deal_group {
+    font-family: georgia,serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+}		
+
+.single_deal .deal_desc {
+    font-family: georgia,serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+}		
+
+.deal_buyer_list {
+    margin-left:0px;
+}
+
+.deal_buyer_list a {
+    position: relative;
+    border:0px;
+    padding:0px;
+    margin:10 0 0 5px;
+}
+
+.deal_buyer_img {
+    width:56px;
+    height:56px;
+}
+
+.deal_buyer_cnt {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.deal_status {
+    margin-left:10px;
+}
+
+.deal_dtime {
+    color:white;
+    font-size:22px;
+}
+
+.deal_cost {
+    font-size:28px;
+}
+
+.deal_dash {
+    font-size:28px;
+    color:orange;
+}
+
+.deal_cnt {
+    font-size:20px;
+}
+
+.deal_warning {
+    margin-top: 8px;
+    font-size: 12px;
+    color: red;
+}	
+
+.din, .din a {
+    font-family: "din-condensed-web-1","din-condensed-web-2", sans-serif;
+    text-transform: uppercase;
+}
+
+.cta-red-ribbon {
+    width: 204px;
+    height: 38px;
+    background: url("http://www.grubwithus.com/assets/onepointoh/cta_red_ribbon-796fe9b4ef4c6593896ab0cc815d20c0.png") no-repeat;
+    margin-top: 9px;
+    font-size: 14px;
+    color: white;
+    padding-top: 6px;
+}	
+
+.cta-green-ribbon, .cta-green-ribbon-pending {
+    width: 204px;
+    height: 38px;
+    background: url("http://www.grubwithus.com/assets/onepointoh/cta_green_ribbon-da905eab776360023b740b7555947d40.png") no-repeat;
+    margin-top: 9px;
+    font-size: 14px;
+    color: white;
+    padding-top: 6px;
+    text-transform: uppercase;
+}
+
+
+/* deal_detail ################################################################### */
+.deal_close_btn {
+    font-size:18px;
+}
+
+.order_deal {
+    padding: 22px 0 0 0;
+    border-bottom: 2px solid #333;
+    margin-left:10px;
+    margin-top:65px;
+    margin-right:10px;
+    height:127px;
+}		
+
+.order_deal .span3 {
+    margin-left:0px;
+}
+
+.order_deal .shop_img {
+    width:160px;
+    height:120px;
+}
+
+.order_deal .deal_shop {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: none;
+    margin-bottom:0px;
+}		
+
+.order_deal .deal_group {
+    font-family: georgia,serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+}		
+
+.order_deal .deal_desc {
+    font-family: georgia,serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+}		
+
+.order_dish {
+    position: relative;
+}
+
+.deal_detail {
+    margin-left: 10px;
+    margin-top:5px;
+}
+
+.deal_col_detail {
+    margin-left: 5px;
+    text-align: center;
+}
+
+.deal_col_mydish {
+    margin-left: 5px;
+}
+
+.dish_img_box {
+    margin-left:0px;
+}
+
+.dish_buyers_box {
+    margin: 5px;
+    font-size:13px;
+}
+.dish_custom_box {
+    margin: 5 5 5 20px;
+    font-size:13px;
+}
+
+.dish_name {
+    color:blue;
+    line-height: 20px;
+}
+
+.dish_price {
+    color:red;
+    line-height: 20px;
+    text-align: left;
+}
+
+.dish_quantity {
+    color:red;
+    line-height: 20px;
+    text-align: left;
+}
+
+.dish_img {
+    width:156px;
+    height:116px;
+}
+
+.dish_img_menu {
+    width:100px;
+    height:70px;
+}
+
+.dish_cate {
+    font-style:normal;
+    text-align:left;
+}
+
+.dish_spec {
+    margin-left:9px;
+}
+
+.mydish_title {
+    font-style:normal;
+    text-align:center;
+}
+
+.mydish_img_col {
+    padding-right: 0px;
+}
+.mydish_desc_col {
+    padding-right: 0px;
+}
+
+.mydish_img {
+    width:56px;
+    height:56px;
+}
+
+.mydish_name {
+    color: blue;
+    line-height: 20px;
+}
+
+.mydish_sum {
+    line-height: 16px;
+}
+
+.mydish_note_box {
+    margin-top: 10px;
+}
+
+.mydish_note {
+    margin-right: 5px;
+}
+
+.mydish_subtotal_title {
+    font-style:normal;
+    text-align:right;
+}
+
+.mydish_subtotal_num {
+    color:red;
+    font-size:28px;
+}
+
+.deal_order {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-top: 10px;
+	margin-right: 10px;
+	z-index: 10;
+	display: none;
+	cursor: pointer;
+}
+
+.deal_state {
+    margin-top: -6px;
+    text-align: center;
+    float: right;
+    width: 204px;
+    height: 127px;
+    background: url("http://www.grubwithus.com/assets/onepointoh/cta_bg-99d164269a7f99eb26dc1bc326438738.png") no-repeat 50% 50%;
+}
+
+.deal_action {
+    margin-top: -6px;
+    text-align: center;
+    float: right;
+    height: 127px;
+}
+
+.dish_custom {
+	margin:10px;
+}	
+
+.mydish_price_col {
+    position:relative;
+}
+
+.mydish_delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+}
+
+/* mylove ################################################################### */
+.myshop_box {
+    margin-left:0px;
+    margin-top:65px;
+}
+
+.myshop_img {
+    width:210px;
+    height:150px;
+}        
+
+/* grp list ################################################################### */
+.grp_list_box {
+    margin-left:0px;
+    margin-top:65px;
+}
+
+.grp_create_col {
+    text-align: center;
+}
+
+.single_grp {
+    background-color: #EFEFEF;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));
+    background-image: -moz-linear-gradient(top, #ffffff, #efefef);
+    background-image: -ms-linear-gradient(top, #ffffff, #efefef);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+    background-image: -webkit-linear-gradient(top, #ffffff, #efefef);
+    background-image: -o-linear-gradient(top, #ffffff, #efefef);
+    background-image: linear-gradient(top, #ffffff, #efefef);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#efefef', GradientType=0);
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.grp_desp {
+    color:blue;
+    font-weight: normal;
+}
+
+/* grp_create ################################################################### */
+div.grp_detail {
+	text-align: center;
+}
+
+.grp_detail .span8 {
+    margin-left:0px;
+}
+
+.grp_detail .clearfix {
+    margin-left:60px;
+}
+
+.grp_detail .actions  {
+    margin-left:0px;
+	text-align: right;
+}
+
+/* shop_list ################################################################### */
+.shop_header {
+    margin-top: 20px;
+    font-size: 18px;
+}		
+
+.shop_area_box {
+    background-color: #A5A4A4;
+    color: white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.shop_area {
+    color: white;
+}
+
+.shop_search_box {
+    margin:0px;
+}
+
+.shop_search {
+    margin:6px 10px;
+}
+
+.shop_cat_box {
+    margin:0px 20px;
+    padding: 5px 19px;
+}
+
+.shop_cat {
+	border:0px;
+}
+
+.single_shop_box {
+    margin:20px 20px;
+}
+
+.single_shop {
+	background-color: #EFEFEF;
+	background-repeat: repeat-x;
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));
+	background-image: -moz-linear-gradient(top, #ffffff, #efefef);
+	background-image: -ms-linear-gradient(top, #ffffff, #efefef);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+	background-image: -webkit-linear-gradient(top, #ffffff, #efefef);
+	background-image: -o-linear-gradient(top, #ffffff, #efefef);
+	background-image: linear-gradient(top, #ffffff, #efefef);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#efefef', GradientType=0);
+	-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.single_shop_title {
+    position:relative;
+}
+
+.single_shop_info {
+    margin:0px 0px;
+}
+
+.single_shop_info .shop_img {
+    width:160px;
+    height:120px;
+}
+
+.single_shop_love {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+}
+
+.single_shop_order {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+
+.shop_title {
+    color:green;
+}
+
+.shop_contact {
+    text-align:right;
+}
+
+.shop_contact_img {
+    opacity:0.5;
+}
+
+.shop_grp_buycnt {
+    margin-left: 5px;
+    padding-bottom: 1px;
+}
+
+a.shop_buyer_grp {
+    margin-right: 5px;
+    background: #888;
+    color: white;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    font-family: "din-condensed-web-1","din-condensed-web-2", sans-serif;
+    font-size: 13px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid white;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.shop_buyer_grp:hover {
+    background: #7EB138;
+    color: white;
+    text-decoration: none;/*underline;*/
+}
+
+/* other ################################################################### */
+input {
+    height: 28px;
+}
+
+table th + th, table td + td {
+    border-left: 0px solid #DDD;
+}
+
+
+
+
+		

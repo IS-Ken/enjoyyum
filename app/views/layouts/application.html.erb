@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>EnjoyYum</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= yield :css_head %>
+  <%= javascript_include_tag "application" %>
+  <%= yield :js_head %>
+  <%= javascript_tag do %> 
+    $(document).ready(function() { 
+        $('.topbar').dropdown();
+        <%= yield :js_ready %> 
+    }); 
+  <%end %>   
+  
+</head>
+<body>
+<div id="base_header"><%= render "baseheader" %></div>
+<div id="base_container" class="container container_box">
+    <%= content_for?(:content) ? yield(:content) : yield %>
+    <footer style="margin-top:5px;padding-top:5px;"><%= render "basefooter" %></footer>
+</div>
+</body>
+</html>
