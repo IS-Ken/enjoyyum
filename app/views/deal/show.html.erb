@@ -1,26 +1,31 @@
-﻿<% content_for :js_ready do %>
-    deal_create_init();
+﻿<%= javascript_tag do %> 
+<% end %>
+
+<% content_for :js_ready do %>
+    $("#formOrderInfo").submit(function(event) { 
+        alert("抱歉,網站忙碌中,請用Email或電話訂購.");
+        return false; 
+    }); 
 <% end %>
 
 <div class="alert-message success fade in hide" data-alert="alert">
     <a class="close" href="#">×</a>
-    <p><strong>恭喜!</strong> 新增店家成功.</p>
+    <p><strong>恭喜!</strong> 成功.</p>
 </div>
-<div class="alert-message error fade in hide" data-alert="alert">
+<div class="alert-message error fade in" data-alert="alert">
     <a class="close" href="#">×</a>
-    <p><strong>輸入錯誤!</strong> 店家名稱不可空白.</p>
+    <p><strong>網站忙碌中!</strong> 請用Email或電話訂購.</p>
 </div>
 
 <div class="row shop_info">
-	<form id="formShopInfo">
+	<form id="formOrderInfo">
 
         <div class="online_order" style="margin:10px;padding: 10px;background-color: #EAEAEA;">
            <h3>訂單內容</h3>
             <p>購買滿10包以上免運費，若未滿10包請付運費100元。(限寄送本島）
-               付款方式：電匯或現金存入 。
-               匯款帳戶 : 台北富邦/西湖分行 668168132892 戶名:李金璋
-               目前本站尚無貨到付款服務，因此每次交易請先匯款，如有不便敬請原諒。
-               請撥打0952-121-831 訂購，並告知匯款帳號後五碼。</p>
+               付款方式：電匯或現金存入。匯款帳戶 : 台北富邦/西湖分行 668168132892 戶名:李金璋<br>
+               訂購請撥打0952-121-831 or Email:chinchanglee@gmail.com，並告知匯款帳號後五碼。 
+               每次交易請先匯款，如有不便敬請原諒。</p>
 
             <table class="bordered-table zebra-striped">
               <thead>
@@ -176,7 +181,7 @@
             </div>
         </div>
 
-        <!--<div class="online_order" style="margin:10px;padding: 10px;background-color: #EAEAEA;">
+        <div class="online_order" style="margin:10px;padding: 10px;background-color: #EAEAEA;">
             <h3>聯絡資訊</h3>
             <div class="clearfix single_field required">
                 <label for="name">姓名</label>
@@ -220,7 +225,7 @@
         </div>
 
 		<div class="actions">
-            <button type="submit" class="btn primary">Save changes</button>&nbsp;<button type="reset" class="btn">Cancel</button>
-		</div>-->
+            <button type="submit" class="btn primary">確認</button>&nbsp;<button type="reset" class="btn">清除</button>
+		</div>
 	</form>
 </div>
